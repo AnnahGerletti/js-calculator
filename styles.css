@@ -6,41 +6,38 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 #calculator{
   height: 450px;
   width: 320px;
   border-style: solid;
   border-width: medium;
-  border-color: red;
+  border-color: black;
   position: relative;
+  border-radius: 10%;
 }
 
 /*top two screens container*/
-.screenContainer{
-  display: flex;
-  flex-direction: column;
-  width: 250 px;
-  height: 80px;
-  background-color: white;
-  text-align: right;
-}
-
-#entryScreen{
+#screen{
   width:85%;
   height: 60px;
   background-color: lightgrey;
   margin: auto;
+  border-radius: 8%;
+  text-align: right;
+}
+
+#answer {
+  height:1em;
 }
 
 #equationScreen p{
   width:85%;
   height: 20px;
-  background-color: lightyellow;
+  background-color: lightgreen;
   margin: auto;
+  border-radius: 8%;
+  text-align: right;
+  /*position: relative;*/
 }
 
 
@@ -65,6 +62,9 @@ button{
   border-radius: 20%;
   margin: auto;
   font-size: 16px;
+  margin: 0px 0px 6px 0px;
+  flex-grow: 5;
+
 
 
 }
