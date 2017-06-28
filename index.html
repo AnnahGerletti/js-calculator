@@ -12,11 +12,22 @@
       <link href="styles.css" rel="stylesheet" type="text/css">
     <!-- script -------------------------->
       <script type="text/javascript" src="utilities.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <!-- <script> this is a jQuery expression that does same thing as clear all function
+            $(document).ready(function(){
+              console.log("yep")
+              $("button.red").click(function(){
+                $("p").html(0);
+              });
+            });
+            </script> -->
+
 
 
 
   </head>
   <body>
+
     <div class="container">
       <div id="calculator">
         <!-- main screen that shows the numbers -->
@@ -24,21 +35,21 @@
           <div id="screen" class="textRight">
             <div class="answerBox">
               <p id="answer"></p>
+              <p id="equation"></p>
             </div>
 
           <!-- screen that shows the writen equation -->
-            <div id="equationScreen" class="textRight"> <!--can you reference html by its values or types or do you need a class-->
-              <p id="equation"></p>
-            </div>
+           <!--can you reference html by its values or types or do you need a class-->
+
           </div>
 
 
 
           <!-- buttons -->
           <div class="buttonContainer">
-              <button class="grey" type="button" value="AC" onclick="allClear()">All Clear</button>
-              <button class="grey" type="button" value="CR" onclick="clearStuff()">Clear</button>
-              <button class="grey" type="button" value="percent" onclick="math('%')">%</button>
+              <button class="power" type="button" value="Power" onclick="power()">PWR</button>
+              <button class="red" type="button" value="AC" onclick="allClear()">AC</button>
+              <button class="grey" type="button" value="CR" onclick="clearStuff()">CR</button>
               <button class="blue" type="button" value="divide" onclick="math('/')">/</button>
               <button class="white" type="button" value="seven" onclick="math('7')">7</button>
               <button class="white" type="button" value="eight" onclick="math('8')">8</button>
@@ -58,10 +69,12 @@
 
           </div>
 
-
+<!-- Need to eventually add a home button and add it to the blog -->
           </div>
-
         </div>
-
+        <footer>
+          <span>Created by: Annah Gerletti</span><br>
+          <span>Enspiral Dev Academy</span>
+        </footer>
   </body>
 </html>
